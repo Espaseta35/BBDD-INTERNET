@@ -7,6 +7,36 @@ header {
 	color: White;
 }
 
+.logo {
+	position: relative;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.login-system {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.registration-button {
+	padding: 10px 20px;
+	border: 1px solid white;
+	border-radius: 8px;
+	color: white;
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.login-button {
+	color: white;
+	text-decoration: none;
+}
+
 h1,
 h2 {
 	text-align: center;
@@ -28,6 +58,7 @@ nav li {
 	padding: 5px 10px;
 	background-color: darkgrey;
 }
+
 nav li:hover {
 	border: 1px solid red;
 	background-color: white;
@@ -41,12 +72,13 @@ nav li:hover {
 	margin-right: 10%;
 	margin-top: 5%;
 	font-size: 120%;
+	color: white;
 }
 
 .texto2 {
 	text-align: center;
 	height: 30%;
-
+	color: white;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 5%;
@@ -56,11 +88,16 @@ nav li:hover {
 .texto3 {
 	text-align: center;
 	height: 30%;
-
+	color: white;
 	margin-left: 10%;
 	margin-right: 10%;
 	margin-top: 5%;
 	font-size: 120%;
+}
+
+.description {
+	color: white;
+	font-weight: bold;
 }
 
 article {
@@ -70,7 +107,7 @@ article {
 	margin-right: 10%;
 	margin-top: 5%;
 	font-size: 120%;
-	color: WHITE;
+	color: white;
 }
 
 #cuerpo {
@@ -106,7 +143,7 @@ aside {
 	margin-right: 10%;
 	margin-top: 5%;
 	font-size: 120%;
-	color: WHITE;
+	color: white;
 }
 
 iframe {
