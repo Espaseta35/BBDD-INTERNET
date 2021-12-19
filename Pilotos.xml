@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Pilotos SYSTEM "Pilotos.dtd">
+<Pilotos>
+<Pilotos>
+ <nombre>Pedro Sanchez Lopez</nombre>
+ <licencia>78614</licencia>
+
+</Pilotos>
+<Pilotos>
+ <nombre>Pepe Martinez Rodriguez</nombre>
+ <licencia>762433</licencia>
+
+</Pilotos>
+
+<Pilotos>
+
+ <nombre>Franchesco Virgolini Gaspar</nombre>
+ <licencia>653134</licencia>
+
+</Pilotos>
+<Pilotos>
+ <nombre>Raul Vergara Ruiz</nombre>
+ <licencia>974651</licencia>
+
+</Pilotos>
+</Pilotos>

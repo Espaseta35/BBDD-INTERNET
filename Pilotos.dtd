@@ -1,0 +1,5 @@
+<!ELEMENT Pilotos (Pilotos*)>
+<!ELEMENT pilotos (nombre, licencia)>
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT licencia (#PCDATA) >
+
