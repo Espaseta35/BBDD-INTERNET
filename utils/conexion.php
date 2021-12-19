@@ -3,29 +3,23 @@
 $link = mysqli_connect("localhost", "root", "", "espasarc");
 $usu = $_POST['nombre'];
 $pwd = $_POST['contraseña'];
-$sql = "select * from usuarios where usuario='$usu' and clave='$pwd' and admin='si' ";
-$sql2 = "select * from usuarios where usuario='$usu' and clave='$pwd' and admin='no' ";
+$sql = "select * from datos where nombre='$usu' and contraseña='$pwd' and admin='Si' ";
+$sql2 = "select * from datos where nombre='$usu' and contraseña='$pwd' and admin='No' ";
 $resultado = mysqli_query($link, $sql);
 $resultado2 = mysqli_query($link, $sql2);
 if (mysqli_num_rows($resultado) != 0) {
     session_start();
     $_SESSION['nombre'] = $usu;
     $_SESSION['autentificado'] = "OK";
-
-
-
-
     header("Location: zonavip.php");
 } elseif (mysqli_num_rows($resultado2) != 0) {
     session_start();
     $_SESSION['nombre'] = $usu;
     $_SESSION['autentificado'] = "OK";
-
-
-
     header("Location: zona.php");
 } else {
     header("Location: login.php");
 }
 mysql_free_result($resultado);
 mysql_close($link);
+?>
