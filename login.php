@@ -13,7 +13,9 @@
             <div class="logo">
                 <h1>INFO COCHES RC</h1>
                 <div class="login-system">
-                    <a class="login-button" href="loginSystem/Tarea 9/login.php">Log In</a>
+                <a class="registration-button" href="registro.html"
+							>Registrarse</a
+						>
                 </div>
             </div>
             <nav height="100%">
@@ -36,18 +38,17 @@
 
         <form name="form" method="post" action="./utils/conexion.php">
             <div class="fild">
-                <label for="password" class="password">Usuario:</label>
-                <input class="cajas" type="text" name="user" required>
+                <label for="nombre" class="name">Usuario:</label>
+                <input class="nombre" type="text" name="nombre" required>
             </div>
 
             <div class="fild">
-                <label for="password" class="password">Clave:</label>
-
-                <input class="cajas" type="password" name="key" required>
+                <label for="contraseña" class="password">Clave:</label>
+                <input class="password" type="password" name="contraseña" required>
             </div>
 
             <button type="reset" id="reset">Vaciar el formulario</button>
-            <button type="submit" id="submit">Registrarse</button>
+            <button type="submit" id="submit">Acceder</button>
         </form>
     </main>
     <footer>

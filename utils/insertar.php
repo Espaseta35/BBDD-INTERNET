@@ -9,8 +9,7 @@ if (isset($_POST['nombre']) && !empty($_POST['apellidos']) && isset($_POST['corr
 	$link = mysqli_connect("localhost", "root", "", "espasarc");
 
 	// Con esta sentencia SQL insertaremos los datos en la base de datos
-	mysqli_query($link, "INSERT INTO datos(nombre,apellidos,correo,contraseña,admin)
-	VALUES ('{$_POST['nombre']}','{$_POST['apellidos']}','{$_POST['correo']}','{$_POST['contraseña']}','{$_POST['admin']}')");
+	mysqli_query($link, "INSERT INTO datos(nombre,apellidos,correo,contraseña,admin) VALUES ('{$_POST['nombre']}','{$_POST['apellidos']}','{$_POST['correo']}','{$_POST['contraseña']}','{$_POST['admin']}')");
 
 	// Ahora comprobaremos que todo ha ido correctamente
 	$my_error = mysqli_error($link);

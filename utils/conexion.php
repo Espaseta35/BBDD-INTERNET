@@ -1,8 +1,8 @@
 <?php
 // Conexión con la base de datos
 $link = mysqli_connect("localhost", "root", "", "espasarc");
-$usu = $_POST['user'];
-$pwd = $_POST['key'];
+$usu = $_POST['nombre'];
+$pwd = $_POST['contraseña'];
 $sql = "select * from usuarios where usuario='$usu' and clave='$pwd' and admin='si' ";
 $sql2 = "select * from usuarios where usuario='$usu' and clave='$pwd' and admin='no' ";
 $resultado = mysqli_query($link, $sql);
