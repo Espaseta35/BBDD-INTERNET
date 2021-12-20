@@ -31,18 +31,18 @@
 
 
 
-
-            <p>Buscar un registro:</p>
-            <a href="utils/busqueda.php">Buscar</a>
-
-            <p>Visualizar la base de datos:</p>
-            <a href="consulta.php">Visualizar</a>
-
-            <p>Eliminar registro:</p>
-            <a href="borrar.php">Eliminar</a>
-
-            <p>Cambiar algún dato:</p>
-            <a href="fcambiar.php">Modificar</a>
+            <p>
+            Buscar un registro: 
+            <a href="utils/busqueda.php"> Buscar</a>
+            <p>
+            Visualizar la base de datos:
+            <a href="consulta.php"> Visualizar</a>
+            <p>
+            Eliminar registro:
+            <a href="borrar.php"> Eliminar</a>
+            <p>
+            Cambiar algún dato:
+            <a href="fcambiar.php"> Modificar</a>
 
 
 			</form>
