@@ -6,7 +6,7 @@
 		<meta name="title" content="ICRC" />
 		<link rel="stylesheet" type="text/css" href="./css/styles.css" />
 	</head>
-	<body>
+	<body background="./img/fondo4.jpg">
 		<header>
 			<div class="wrapper">
 				<div class="logo">
@@ -18,75 +18,212 @@
 						>
 					</div>
 				</div>
-				<nav height="100%">
-					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="HRC.html">Historia</a></li>
-						<li><a href="somos.html">Tipo de Coches</a></li>
-						<li><a href="" target="_blank">Tienda</a></li>
-						<li><a href="tarifas.html">Horario</a></li>
-						<li><a href="Pilotos.xml">Pilotos</a></li>
-					</ul>
+				<nav>
+						<ul>
+							<li><a href="Trabajo final.php">Inicio</a></li>
+							<li><a href="HRC.php">Historia</a></li>
+							<li><a href="somos.php">Tipo de Coches</a></li>
+							<li>
+								<a
+									href="https://espasarcshop.com/"
+									target="_blank"
+									>Tienda</a
+								>
+							</li>
+							<li><a href="tarifas.php">Horario</a></li>
+							<li><a href="Pilotos.xml">Pilotos</a></li>
+						</ul>
 				</nav>
 			</div>
 		</header>
-		<main>
-			<div class="trabajo texto1">
-				<a href="HRC.html"
-					><h2><u>Historia de los coches a Radiocontrol</u></h2>
+		<article>
+			<h2>Tipos de Coches RC</h2>
+			Los tipos de coches que puedes encontrar son los coches
+			<b> eléctricos</b> y de <b> combustión </b> también conocidos como
+			coches RC de gasolina. Queremos nombrar también a los coches
+			radiocontrol de juguete que estarían dentro de los coches
+			eléctricos.
+			<p>
+				<img src="./img/fotoc1.jpg" width="35%" />
+				<img src="./img/fotoc2.jpg" width="35%" />
+				<p></p>
+				<h2>La Tracción</h2>
+				Aquí podemos diferenciar dos tipos en coches en las que su
+				distintivo son el número de ruedas motrices. Las siglas WD del
+				inglés (Wheels Driving).
+				<br />
+				<b>2WD</b> Tracción normal: Solamente dos ruedas son las que
+				impulsan el vehículo indiferentemente si son delanteras o
+				traseras.
+				<br />
+				<b>4WD</b> Tracción integral o total: Este tipo de tracción es
+				la que cuatro ruedas impulsan del coche y que son mejores para
+				terrenos sueltos como la tierra.
+			</p>
 
-					<img src="./img/RCH.jpg" aling="center" width="500" /><br
-						clear="right"
-				/></a>
-				<p class="description">
-					¿Cómo surgió la idea de un coche a radiocontrol? En 1950 la
-					empresa Hasbro (fundada como empresa textil en 1923) creó
-					automóviles controlados a distancia. Originalmente se
-					inventaron como herramienta de pastoreo de vacas, pero fue
-					un gran fracaso pues los granjeros no querían saber nada de
-					esa nueva tecnología. Sin embargo, el departamento de I+D
-					que desarrolló juguetes vio un gran potencial en ellos,
-					cambiando el diseño a uno más colorido y más pequeño. Aquí
-					empezaría el imperio de juguetes de Hasbro con los primeros
-					coches RC.
-				</p>
-			</div>
-			<div class="texto2">
-				<a href="taller.html"
-					><h2><u>Servicios que realizamos</u></h2>
+			<h2>La Escala</h2>
+			Cuando hablamos de escala nos referimos al tamaño, esto hace
+			referencia a cuantas veces más pequeño en sus medidas si se compara
+			al tamaño del vehículo original.
+			<br />
+			La fórmula que se utiliza es 1/n indicando n el número de veces más
+			chico o pequeño.<br />
+			Algunas de las escalas más reconocidas en el mundo de los coches
+			radiocontrol son:
 
-					<img src="./img/taller.png" aling="center" width="500" /><br
-						clear="left"
-				/></a>
+			<ul>
+				<li type="circle">1/4</li>
+
+				<li type="square">1/6</li>
+
+				<li type="disc">1/8</li>
+
+				<li type="circle">1/10</li>
+
+				<li type="square">1/16</li>
+
+				<li type="disc">1/32</li>
+			</ul>
+			<br />
+			Categorías de coches Se pueden clasificar de diferentes formas, pero
+			lo común es identificarlos por su diseño siendo coches para asfalto
+			o tierra. También entran en juego aspecto como su resistencia a los
+			golpes, caídas, etc. Las categorías reconocidas son:
+			<ul>
+				<li type="circle">
+					Pista: En esta categoría encontrarás coches pensados para un
+					terreno bastante listo sin apenas irregularidades logrando
+					fácilmente grandes velocidades en poco tiempo. Su
+					denominación inglesa es On-Road.
+				</li>
 				<p>
-					Desde EspasaRCShop os queremos presentar el taller de coches
-					rc. Como indica el nombre, pondremos a vuestra disposición
-					toda nuestra experiencia en la competición para el montaje,
-					mantenimiento y reparación de los coches además de puesta a
-					punto de ellos. Una solución fácil para aquellos que no
-					tengan tiempo para montar o mantener el coche y quieran
-					tenerlo al máximo rendimiento.
-				</p>
-			</div>
-			<div class="texto3">
-				<a href="somos.html"
-					><h2><u>Quiénes somos</u></h2>
+					<img src="./img/FOTOC3.jpg" width="500px" />
+					<p>
+						<li type="circle">
+							Todoterreno: Tal como indica su nombre, es para todo
+							tipo de terrenos. Su denominación en inglés es
+							Off-Road.Existen más, pero las identificamos como
+							subcategorías, como por ejemplo la categoría Rally.
+						</li>
+					</p>
 
-					<img src="./img/QS.jpg" aling="center" width="500" /><br
-						clear="left"
-				/></a>
-
-				<p class="description">
-					Desde EspasaRCShop os queremos presentar el taller de coches
-					rc. Como indica el nombre, pondremos a vuestra disposición
-					toda nuestra experiencia en la competición para el montaje,
-					mantenimiento y reparación de los coches además de puesta a
-					punto de ellos. Una solución fácil para aquellos que no
-					tengan tiempo para montar o mantener el coche y quieran
-					tenerlo al máximo rendimiento.
+					<p>
+						<img src="./img/fotoc4.jpg" width="500px" />
+						<p></p>
+					</p>
 				</p>
-			</div>
-		</main>
+			</ul>
+
+			<h2>Tipos de motor</h2>
+			Los encontramos de dos tipos, motores eléctricos y motores de
+			gasolina o combustión, los cuales tienen sus ventajas e
+			inconvenientes en entre ellos.
+			<br />
+			Si no quieres complicarte e ir directamente a lo fácil lo tuyo son
+			los eléctricos, alternativamente, si te gusta trastear y lo de
+			desmontar, ajustar, poner a punto, etc definitivamente lo tuyo son
+			los coches de RC de gasolina.
+
+			<h2>Tipos de equipamiento</h2>
+			Hacemos referencia a los tipos de coches o conjuntos de equipamiento
+			que encontrarás, que son:
+
+			<h2>Kit</h2>
+			Esta denominación hace referencia a un conjunto de partes, por lo
+			que el coche estará desmontado para que tú mismo lo armes y añadas
+			las piezas que desees para completar tu equipo.
+			<br />
+			Por lo que, <u>si necesitas piezas o accesorios adicionales</u> para
+			completar el conjunto, estas son las que generalmente necesitarás:
+			1.Emisora 2.Baterías 3.Cargador de batería 4.Carrocería y pinturas
+			(en algunos casos) 5.Motor, en caso de que no esté incluido en el
+			Kit 6.Variador o ESC, si no está incluido en el Kit.
+			<h2>RTR</h2>
+			Listo para correr (Ready to Run) por lo que normalmente no tendrás
+			que hacer nada o casi. El coche estará al 80% o 100% listo para
+			usarlo. <b>No necesitas piezas o accesorios adicionales.</b>
+
+			<h2>ARR</h2>
+			Estas letras indican casi listo en inglés «Almost Ready to Run», es
+			idéntico a RTR, pero sin emisora.
+
+			<h2>Coches RC de Gasolina</h2>
+			La principal carasterística es su motor de explosión. Estos son los
+			primeros vehículos radiocontrol, también conocidos como Coches RC
+			Nitro. Estos tienen sus pros y sus contras en comparación a los
+			coches RC eléctricos.
+			<ul>
+				<li type="disc">
+					Pros: Son más llamativos especialmente por su el sonido del
+					motor y su olor.
+				</li>
+
+				<li type="disc">
+					Contras: Su mantenimiento y costos en combustible, así como
+					las baterías.
+				</li>
+			</ul>
+			Estos cochecitos tan llamativos son muy entretenidos y están
+			formados principalmente por estos componentes:
+			<ul>
+				<li type="disc">Emisora</li>
+				<li type="disc">Chasis</li>
+				<li type="disc">Receptor</li>
+				<li type="disc">Motor de combustión</li>
+				<li type="disc">Starter o chispómetro</li>
+				<li type="disc">Combustible</li>
+				<li type="disc">Batería</li>
+				<li type="disc">Cargador</li>
+				<li type="disc">Servos</li>
+			</ul>
+			<br />
+			Podrías pensar que utilizan la misma gasolina que tu coche como la
+			sin plomo 95, pero no es así, al menos en la gran mayoría (porque si
+			existen coches que si admiten el combustible común).
+			<br />
+			Estos coches autos utilizan un combustible con una composición
+			especial, bencina, parafina u otros, también conocidos como nitro.
+			<br />
+			Tenemos una guía para comprar Coches RC de Gasolina en la que
+			explicamos más en profundidad todo esto, hablamos de las posibles
+			dudas que puedes tener y te ayudamos a tomar la mejor elección para
+			tí.
+			<br />
+			<h2>Motor de combustión</h2>
+			Este tipo de motor funciona en su mayoría con combustible de tipo
+			nitro, que tienen una mezcla concreta
+			<u> Metanol, Aceite de Ricino, Aceite sintético y Nitrometano.</u>
+			<p>
+				<img src="./img/fotoc5.png" width="500px" />
+				<p></p>
+				<h2>Carburación y Rodaje</h2>
+				Puede que conozcas estos términos, pero si no es así te vamos a
+				explicar de que tratan.
+			</p>
+
+			<p>
+				<u>Rodaje:</u> Consiste en consumir gasolina cuando el motor es
+				completamente nuevo para que las piezas se ajusten antes de
+				empezar a controlarlo.
+				<br />
+				<u>Carburación:</u> Consiste en ajustar el motor para hallar la
+				mezcla optima de aire y combustible.
+			</p>
+
+			<p>
+				Es importante que se realicen correctamente ya que de ello
+				dependerá directamente la vida útil del coche.
+			</p>
+
+			<h2>Bujías</h2>
+			Solo las encontrarás en los coches de gasolina, también son
+			conocidas inglés como Glow Plugs las cuales son las encargadas de
+			provocar el arranque y funcionamiento del vehículo radiocontrol.
+			<p>
+				<img src="./img/fotoc6.jpg" width="500px" />
+				<p>https://blog.mundohobby.es/coches-rc/</p>
+			</p>
+		</article>
 
 		<footer>
 			<h3>Empresas colaboradoras</h3>

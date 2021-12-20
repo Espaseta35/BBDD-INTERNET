@@ -1,9 +1,10 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="es">
 	<head>
-		<title>Registro</title>
+		<title>ICRC</title>
+		<meta charset="UTF-8" />
+		<meta name="title" content="ICRC" />
 		<link rel="stylesheet" type="text/css" href="./css/styles.css" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	</head>
 	<body>
 		<header>
@@ -12,91 +13,81 @@
 					<h1>INFO COCHES RC</h1>
 					<div class="login-system">
 						<a class="login-button" href="login.php">Log In</a>
+						<a class="registration-button" href="registro.html"
+							>Registrarse</a
+						>
 					</div>
 				</div>
 				<nav height="100%">
 					<ul>
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="HRC.html">Historia</a></li>
-						<li><a href="somos.html">Tipo de Coches</a></li>
-						<li>
-							<a href="https://espasarcshop.com/" target="_blank"
-								>Tienda</a
-							>
-						</li>
-						<li><a href="tarifas.html">Horario</a></li>
+						<li><a href="index.php">Inicio</a></li>
+						<li><a href="HRC.php">Historia</a></li>
+						<li><a href="somos.php">Tipo de Coches</a></li>
+						<li><a href="" target="_blank">Tienda</a></li>
+						<li><a href="tarifas.php">Horario</a></li>
 						<li><a href="Pilotos.xml">Pilotos</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
+		<main>
+			<div class="trabajo texto1">
+				<a href="HRC.php"
+					><h2><u>Historia de los coches a Radiocontrol</u></h2>
 
-		<main id="cuerpo">
-			<h2>Registrarse</h2>
+					<img src="./img/RCH.jpg" aling="center" width="500" /><br
+						clear="right"
+				/></a>
+				<p class="description">
+					¿Cómo surgió la idea de un coche a radiocontrol? En 1950 la
+					empresa Hasbro (fundada como empresa textil en 1923) creó
+					automóviles controlados a distancia. Originalmente se
+					inventaron como herramienta de pastoreo de vacas, pero fue
+					un gran fracaso pues los granjeros no querían saber nada de
+					esa nueva tecnología. Sin embargo, el departamento de I+D
+					que desarrolló juguetes vio un gran potencial en ellos,
+					cambiando el diseño a uno más colorido y más pequeño. Aquí
+					empezaría el imperio de juguetes de Hasbro con los primeros
+					coches RC.
+				</p>
+			</div>
+			<div class="texto2">
+				<a href="tienda.php"
+					><h2><u>Servicios que realizamos</u></h2>
 
-			<form name="form" method="post" action="./utils/insertar.php">
-				<div class="fild">
-					<label for="name" class="name">Nombre:</label>
-					<input
-						name="nombre"
-						type="text"
-						id="nombre"
-						maxlength="30"
-						required
-					/>
-				</div>
+					<img src="./img/taller.png" aling="center" width="500" /><br
+						clear="left"
+				/></a>
+				<p>
+					Desde EspasaRCShop os queremos presentar el taller de coches
+					rc. Como indica el nombre, pondremos a vuestra disposición
+					toda nuestra experiencia en la competición para el montaje,
+					mantenimiento y reparación de los coches además de puesta a
+					punto de ellos. Una solución fácil para aquellos que no
+					tengan tiempo para montar o mantener el coche y quieran
+					tenerlo al máximo rendimiento.
+				</p>
+			</div>
+			<div class="texto3">
+				<a href="somos.php"
+					><h2><u>Quiénes somos</u></h2>
 
-				<div class="fild">
-					<label for="surname" class="surname">Apellidos:</label>
-					<input
-						name="apellidos"
-						type="text"
-						id="apellidos"
-						maxlength="30"
-						required
-					/>
-				</div>
+					<img src="./img/QS.jpg" aling="center" width="500" /><br
+						clear="left"
+				/></a>
 
-				<div class="fild">
-					<label for="email" class="email">Correo:</label>
-					<input
-						name="correo"
-						type="text"
-						id="correo"
-						maxlength="30"
-						required
-					/>
-				</div>
-
-				<div class="fild">
-					<label for="password" class="password">Contraseña:</label>
-					<input
-						type="password"
-						id="contraseña"
-						name="contraseña"
-						size="30"
-						maxlength="”30”"
-						required
-					/>
-				</div>
-
-				<div class="fild checkbox">
-					<label for="adming" class="admin">¿Eres Admin?</label>
-					<input
-						name="admin"
-						type="checkbox"
-						id="admin"
-						value="Si"
-						checked
-					/>
-				</div>
-
-				<button type="reset" id="reset">Vaciar el formulario</button>
-				<button type="submit" id="submit">Registrarse</button>
-
-				<small for="submit">(No olvides Registrarte)</small>
-			</form>
+				<p class="description">
+					Desde EspasaRCShop os queremos presentar el taller de coches
+					rc. Como indica el nombre, pondremos a vuestra disposición
+					toda nuestra experiencia en la competición para el montaje,
+					mantenimiento y reparación de los coches además de puesta a
+					punto de ellos. Una solución fácil para aquellos que no
+					tengan tiempo para montar o mantener el coche y quieran
+					tenerlo al máximo rendimiento.
+				</p>
+			</div>
 		</main>
+
 		<footer>
 			<h3>Empresas colaboradoras</h3>
 			<a href="https://espasarcshop.com/"

@@ -26,9 +26,9 @@
 				<nav>
 					<h3>
 						<ul>
-							<li><a href="Trabajo final.html">Inicio</a></li>
-							<li><a href="HRC.html">Historia</a></li>
-							<li><a href="somos.html">Tipo de Coches</a></li>
+							<li><a href="index.php">Inicio</a></li>
+							<li><a href="HRC.php">Historia</a></li>
+							<li><a href="somos.php">Tipo de Coches</a></li>
 							<li>
 								<a
 									href="https://espasarcshop.com/"
@@ -36,7 +36,7 @@
 									>Tienda</a
 								>
 							</li>
-							<li><a href="tarifas.html">Horario</a></li>
+							<li><a href="tarifas.php">Horario</a></li>
 							<li><a href="Pilotos.xml">Pilotos</a></li>
 						</ul>
 					</h3>
