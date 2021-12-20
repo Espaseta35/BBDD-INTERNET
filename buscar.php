@@ -3,7 +3,7 @@ if (!isset($_POST['cadena'])) {
       echo "Debe especificar una cadena a bucar";
       exit;
 }
-$link = mysqli_connect("localhost", "root", "", "ejercicio7"); // es la contraseña;
+$link = mysqli_connect("localhost", "root", "", "espasarc"); // es la contraseña;
 $result = mysqli_query($link, "SELECT * FROM datos WHERE nombre LIKE '%{$_POST['cadena']}%' ORDER BY nombre");
 if ($row = mysqli_fetch_array($result)) {
       echo "<table border = '1'> \n";
@@ -17,11 +17,10 @@ if ($row = mysqli_fetch_array($result)) {
             echo "<tr> \n";
             echo "<td>" . $row["id"] . "</td> \n";
             echo "<td>" . $row["nombre"] . "</td> \n";
-            echo "<td>" . $row["apellido"] . "</td> \n";
-            echo "<td>" . $row["deporte"] . "</td> \n";
-            echo "<td>" . $row["sexo"] . "</td> \n";
-            echo "<td>" . $row["conducir"] . "</td> \n";
-            echo "<td>" . $row["aficiones"] . "</td> \n";
+            echo "<td>" . $row["apellidos"] . "</td> \n";
+            echo "<td>" . $row["correo"] . "</td> \n";
+            echo "<td>" . $row["contraseña"] . "</td> \n";
+            echo "<td>" . $row["admin"] . "</td> \n";
 
             echo "</tr> \n";
       } while ($row = mysqli_fetch_array($result));
@@ -30,4 +29,4 @@ if ($row = mysqli_fetch_array($result)) {
       echo "¡ No se ha encontrado ningún registro !";
 }
 ?>
-<p>Volver al inicio: <a href="tarea8.html"> INICIO</a>
+<p>Volver al inicio: <a href="index.php"> INICIO</a>
