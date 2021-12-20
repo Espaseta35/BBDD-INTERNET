@@ -17,7 +17,7 @@
 					<h1>INFO COCHES RC</h1>
 					<div class="login-system">
 						<a class="login-button" href="login.php">Log In</a>
-						<a class="registration-button" href="registro.html"
+						<a class="registration-button" href="registro.php"
 							>Registrarse</a
 						>
 					</div>

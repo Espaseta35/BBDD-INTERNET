@@ -13,7 +13,7 @@
             <div class="logo">
                 <h1>INFO COCHES RC</h1>
                 <div class="login-system">
-                <a class="registration-button" href="registro.html"
+                <a class="registration-button" href="registro.php"
 							>Registrarse</a
 						>
                 </div>
