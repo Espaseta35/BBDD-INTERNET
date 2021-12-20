@@ -33,7 +33,7 @@
 
             <p>
             Buscar un registro: 
-            <a href="utils/busqueda.php"> Buscar</a>
+            <a href="busqueda.php"> Buscar</a>
             <p>
             Visualizar la base de datos:
             <a href="consulta.php"> Visualizar</a>
