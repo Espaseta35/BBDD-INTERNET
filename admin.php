@@ -17,33 +17,28 @@ $nombreusuario= $_SESSION['nombre'];
 					<div class="login-system">
 						<a class="login-button" href="utils/salir.php">Cerrar Sesión</a>
 					</div>
-
 				</div>
-				<nav height="100%">
+				<nav>
 					<ul>
-					<li><a href="index.php">Inicio</a></li>
-							<li><a href="HRC.php">Historia</a></li>
-							<li><a href="somos.php">Tipo de Coches</a></li>
-							<li><a href="tienda.php">Tienda</a></li>
-							<li><a href="tarifas.php">Horario</a></li>
-							<li><a href="Pilotos.xml">Pilotos</a></li>
-                            <li><a href="admin.php">Administrar</a></li>
+						<li><a href="index.php">Inicio</a></li>
+						<li><a href="HRC.php">Historia</a></li>
+						<li><a href="somos.php">Tipo de Coches</a></li>
+						<li><a href="tienda.php">Tienda</a></li>
+						<li><a href="tarifas.php">Horario</a></li>
+						<li><a href="Pilotos.xml">Pilotos</a></li>
+                        <li><a href="admin.php">Administrar</a></li>	
 					</ul>
 				</nav>
 			</div>
 		</header>
 
 		<main id="cuerpo">
-		
-
-			<p class="caja" href="busqueda.php">Buscar un registro:  <a href="busqueda.php">     Buscar</a><p>
-            <p class="caja">Visualizar la base de datos: <a href="consulta.php">     Visualizar</a><p>
-            <p class="caja">Eliminar registro:<a href="borrar.php">     Eliminar</a><p>
-            <p class="caja">Cambiar algún dato:<a href="fcambiar.php">     Modificar</a><p>
-
-
-			</form>
+			<p class="caja" href="busqueda.php">Buscar un registro: <a href="busqueda.php">Buscar</a><p>
+            <p class="caja">Visualizar la base de datos: <a href="consulta.php">Visualizar</a><p>
+            <p class="caja">Eliminar registro: <a href="borrar.php">Eliminar</a><p>
+            <p class="caja">Cambiar algún dato: <a href="fcambiar.php">Modificar</a><p>
 		</main>
+
 		<footer>
 			<h3>Empresas colaboradoras</h3>
 			<a href="https://espasarcshop.com/"

@@ -1,0 +1,28 @@
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+tr {
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+}
+
+th {
+	padding: 8px 8px;
+	display: table-cell;
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 2px solid #ccc;
+}
+
+td {
+	box-sizing: border-box;
+	height: 40px;
+	padding: 8px 8px;
+	border-bottom: 2px solid #ccc;
+}
+
+tr.red {
+	background-color: #f44336;
+}
