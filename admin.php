@@ -33,10 +33,10 @@ $nombreusuario= $_SESSION['nombre'];
 		</header>
 
 		<main id="cuerpo">
-			<p class="caja" href="busqueda.php">Buscar un registro: <a href="busqueda.php">Buscar</a><p>
-            <p class="caja">Visualizar la base de datos: <a href="consulta.php">Visualizar</a><p>
-            <p class="caja">Eliminar registro: <a href="borrar.php">Eliminar</a><p>
-            <p class="caja">Cambiar algún dato: <a href="fcambiar.php">Modificar</a><p>
+			<p class="caja" ><a href="busqueda.php">Buscar un registro</a><p>
+            <p class="caja"><a href="utils/consulta.php">Visualizar la base de datos</a><p>
+            <p class="caja"><a href="borrar.php">Eliminar registro</a><p>
+            <p class="caja"> <a href="fcambiar.php">Cambiar algún dato</a><p>
 		</main>
 
 		<footer>
