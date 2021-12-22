@@ -24,27 +24,18 @@ header("Location: login.php");
 				<div class="logo">
 					<h1>INFO COCHES RC</h1>
 					<div class="login-system">
-						<a class="login-button" href="login.php">Log In</a>
-						<a class="registration-button" href="registro.php"
-							>Registrarse</a
-						>
+						<a class="login-button" href="utils/salir.php">Cerrar Sesión</a>
 					</div>
 				</div>
 				<nav>
 						<ul>
-							<li><a href="Trabajo final.php">Inicio</a></li>
+						<li><a href="index.php">Inicio</a></li>
 							<li><a href="HRC.php">Historia</a></li>
 							<li><a href="somos.php">Tipo de Coches</a></li>
-							<li>
-								<a
-									href="https://espasarcshop.com/"
-									target="_blank"
-									>Tienda</a
-								>
-							</li>
+							<li><a href="tienda.php">Tienda</a></li>
 							<li><a href="tarifas.php">Horario</a></li>
 							<li><a href="Pilotos.xml">Pilotos</a></li>
-                            <li><a href="../admin.php">Administrar</a></li>
+                            <li><a href="admin.php">Administrar</a></li>
 						</ul>
 				</nav>
 			</div>
