@@ -5,6 +5,7 @@
 		<meta charset="UTF-8" />
 		<meta name="title" content="ICRC" />
 		<link rel="stylesheet" type="text/css" href="../css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="../css/table.css" />
 	</head>
 	<body background="../img/fondo4.jpg">
     <header>
@@ -40,17 +41,15 @@ if (!isset($_POST['cadena'])) {
 $link = mysqli_connect("localhost", "root", "", "espasarc"); // es la contraseña;
 $result = mysqli_query($link, "SELECT * FROM datos WHERE nombre LIKE '%{$_POST['cadena']}%' ORDER BY nombre");
 if ($row = mysqli_fetch_array($result)) {
-      echo "<table border = '1'> \n";
+      echo "<table > \n";
       //Mostramos los nombres de las tablas 
       echo "<tr> \n";
-      while ($field = mysqli_fetch_field($result)) {
-            echo "<td>$field->name</td> \n";
-      }
-      echo "</tr> \n";
+	  echo "<tr class='red'><th>id</td><td>Nombre</th><th>Apellido </th><th>Correo </th><th> Contraseña </th><th > Admin</th></tr> \n"; 
 
       do {
+	 
             echo "<tr> \n";
-            echo "<td>" . $row["id"] . "</td> \n";
+			echo "<td>" . $row["id"] . "</td> \n";
             echo "<td>" . $row["nombre"] . "</td> \n";
             echo "<td>" . $row["apellidos"] . "</td> \n";
             echo "<td>" . $row["correo"] . "</td> \n";
@@ -64,4 +63,12 @@ if ($row = mysqli_fetch_array($result)) {
       echo "¡ No se ha encontrado ningún registro !";
 }
 ?>
-            </div>
+ </div>
+ </main>
+ <footer>
+</footer>
+</body>
+ 
+ 
+ 
+ 

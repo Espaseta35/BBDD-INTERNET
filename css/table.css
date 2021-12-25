@@ -14,6 +14,7 @@ th {
 	text-align: left;
 	vertical-align: top;
 	border-bottom: 2px solid #ccc;
+	color: white;
 }
 
 td {
@@ -21,6 +22,7 @@ td {
 	height: 40px;
 	padding: 8px 8px;
 	border-bottom: 2px solid #ccc;
+	color: white;
 }
 
 tr.red {
