@@ -30,7 +30,8 @@
             </nav>
         </div>
     </header>
- <?php 
+    <main id="cuerpo">
+ <?php
 
 $link = mysqli_connect("localhost", "root", "","espasarc"); 
 $resul1 = mysqli_query($link,"SELECT id,nombre,apellidos,correo,contraseña,admin FROM datos"); 
@@ -50,3 +51,4 @@ echo "</table> \n";
 Elimina por nombre:<input maxlength="30" size="30" name="cadena"><br>
 <input name="Enviar" value="Elimina datos" type="submit">
 </form>
+</main>
