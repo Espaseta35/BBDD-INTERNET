@@ -12,8 +12,8 @@ if (mysqli_num_rows($resultado) != 0) {
     $_SESSION['nombre'] = $usu;
     $_SESSION['autentificado'] = "OK";
     header("Location: ../admin.php");
-    
-} elseif (mysqli_num_rows($resultado2) != 0) {
+} 
+elseif (mysqli_num_rows($resultado2) != 0) {
     session_start();
     $_SESSION['nombre'] = $usu;
     $_SESSION['autentificado'] = "OKK";
