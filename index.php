@@ -34,7 +34,7 @@
 		<main>
 			<div class="trabajo texto1">
 				<a href="HRC.php"
-					><h2><u>Historia de los coches a Radiocontrol</u></h2>
+					><h2>Historia de los coches a Radiocontrol</h2>
 
 					<img src="./img/RCH.jpg" aling="center" width="500" /><br
 						clear="right"
@@ -54,7 +54,7 @@
 			</div>
 			<div class="texto2">
 				<a href="tienda.php"
-					><h2><u>Servicios que realizamos</u></h2>
+					><h2>Entrar en la tienda</h2>
 
 					<img src="./img/taller.png" aling="center" width="500" /><br
 						clear="left"

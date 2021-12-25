@@ -3,10 +3,11 @@ $nombreusuario= $_SESSION['nombre'];
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html >
 	<head>
 		<title>Registro</title>
-		<link rel="stylesheet" type="text/css" href="./css/styles.css" />
+	    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="./css/table.css" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	</head>
 	<body>
@@ -31,7 +32,32 @@ $nombreusuario= $_SESSION['nombre'];
 				</nav>
 			</div>
 		</header>
-			</form>
+<main>
+		<h2>PRODUCTOS</h2>
+		<?php $link = mysqli_connect("localhost", "root", "","espasarc"); 
+$resul1 = mysqli_query($link,"SELECT producto,codigo,imagen,precio FROM productos"); 
+//Creamos  la tabla
+echo "<table> \n"; 
+
+//incluimos los nombres de los campos
+echo "<tr class='red'><th>Producto</th><th>Código </th><th>Imagen </th><th> Precio </th></tr> \n"; 
+while ($row = mysqli_fetch_row($resul1)){ 
+       echo "<tr>
+	   		<td>$row[0]</td>
+	   		<td>$row[1]</td>
+			<td> <img width='80' height='80' src='$row[2]'> </td>
+			<td>$row[3]</td>
+			
+		
+
+			
+			
+			</tr>\n"; 
+}
+echo "</table> \n"; 
+?>
+
+
 		</main>
 		<footer>
 			<h3>Empresas colaboradoras</h3>
