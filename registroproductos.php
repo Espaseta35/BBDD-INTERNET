@@ -1,7 +1,3 @@
-<?php include "seguridad1.php";
-$nombreusuario= $_SESSION['nombre'];
-?>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
@@ -15,31 +11,77 @@ $nombreusuario= $_SESSION['nombre'];
 				<div class="logo">
 					<h1>INFO COCHES RC</h1>
 					<div class="login-system">
-						<a class="login-button" href="utils/salir.php">Cerrar Sesión</a>
+						<a class="login-button" href="login.php">Log In</a>
 					</div>
 				</div>
-				<nav>
+				<nav height="100%">
 					<ul>
-						<li><a href="index.php">Inicio</a></li>
-						<li><a href="HRC.php">Historia</a></li>
-						<li><a href="somos.php">Tipo de Coches</a></li>
-						<li><a href="tienda.php">Tienda</a></li>
-						<li><a href="tarifas.php">Horario</a></li>
-						<li><a href="Pilotos.xml">Pilotos</a></li>
-                        <li><a href="admin.php">Administrar</a></li>	
+							<li><a href="index.php">Inicio</a></li>
+							<li><a href="HRC.php">Historia</a></li>
+							<li><a href="somos.php">Tipo de Coches</a></li>
+							<li><a href="tienda.php">Tienda</a></li>
+							<li><a href="tarifas.php">Horario</a></li>
+							<li><a href="Pilotos.xml">Pilotos</a></li>
+                            <li><a href="admin.php">Administrar</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 
 		<main id="cuerpo">
-			<p class="caja coja2" ><a href="busqueda.php">Buscar un registro</a><p>
-            <p class="caja coja2"><a href="consulta.php">Visualizar la base de datos</a><p>
-            <p class="caja coja2"><a href="borrar.php">Eliminar registro</a><p>
-            <p class="caja coja2"> <a href="fcambiar.php">Cambiar algún dato</a><p>
-			<p class="caja coja2"> <a href="registroproductos.php">Añadir un nuevo producto</a><p>
-		</main>
+			<h2>Añadir un producto nuevo</h2>
 
+			<form name="form" method="post" action="./utils/insertar2.php">
+				<div class="fild">
+					<label for="name" class="name">Nombre del producto:</label>
+					<input
+						name="producto"
+						type="text"
+						id="producto"
+						maxlength="50"
+						required
+					/>
+				</div>
+
+				<div class="fild">
+					<label for="ref" class="ref">Referencia:</label>
+					<input
+						name="codigo"
+						type="text"
+						id="codigo"
+						maxlength="5"
+						required
+					/>
+				</div>
+
+				<div class="fild">
+					<label for="imagen" class="imagen">Url de la imagen:</label>
+					<input
+						name="imagen"
+						type="text"
+						id="imagen"
+						maxlength="400"
+						required
+					/>
+				</div>
+
+				<div class="fild">
+					<label for="price" class="price">Precio:</label>
+					<input
+						type="int"
+						id="precio"
+						name="precio"
+						size="10"
+						maxlength="5"
+						required
+					/>
+				</div>
+
+
+				<button type="reset" id="reset">Vaciar el formulario</button>
+				<button type="submit" id="submit">Añadir</button>
+			</form>
+		</main>
 		<footer>
 			<h3>Empresas colaboradoras</h3>
 			<a href="https://espasarcshop.com/"

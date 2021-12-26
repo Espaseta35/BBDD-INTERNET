@@ -1,17 +1,11 @@
 <?php
-// Primero comprobamos que ningún campo esté vacío y que todos los campos existan.
-if (!isset($_POST['admin'])) {
-	$_POST['admin'] = 'No';
-}
 
-if (isset($_POST['nombre']) && !empty($_POST['apellidos']) && isset($_POST['correo']) && !empty($_POST['contraseña']) && isset($_POST['admin'])&& isset($_POST['id'])) {
-	// Si entramos es que todo se ha realizado correctamente y conectamos con la base de datos club de mysql
+if (isset($_POST['producto']) && !empty($_POST['codigo']) && isset($_POST['imagen']) && !empty($_POST['precio'])) {
+
 	$link = mysqli_connect("localhost", "root", "", "espasarc");
 
-	// Con esta sentencia SQL insertaremos los datos en la base de datos
-	mysqli_query($link, "INSERT INTO datos(nombre,apellidos,correo,contraseña,admin,id) VALUES ('{$_POST['nombre']}','{$_POST['apellidos']}','{$_POST['correo']}','{$_POST['contraseña']}','{$_POST['admin']}','{$_POST['id']}')");
+	mysqli_query($link, "INSERT INTO productos(producto,codigo,imagen,precio) VALUES ('{$_POST['producto']}','{$_POST['codigo']}','{$_POST['imagen']}','{$_POST['precio']}'");
 
-	// Ahora comprobaremos que todo ha ido correctamente
 	$my_error = mysqli_error($link);
 	if (!empty($my_error)) {
 		echo "Ha habido un error al insertar los valores. $my_error";
@@ -21,3 +15,4 @@ if (isset($_POST['nombre']) && !empty($_POST['apellidos']) && isset($_POST['corr
 } else {
 	echo "Error, no ha introducido todos los datos";
 }
+?>

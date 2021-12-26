@@ -40,14 +40,14 @@ $resul1 = mysqli_query($link,"SELECT producto,codigo,imagen,precio FROM producto
 echo "<table> \n"; 
 
 //incluimos los nombres de los campos
-echo "<tr class='red'><th>Producto</th><th>Código </th><th>Imagen </th><th> Precio </th></tr> \n"; 
+echo "<tr class='red'><th>Producto</th><th>Referencia</th><th>Imagen</th><th>Precio</th><th>  </th></tr> \n"; 
 while ($row = mysqli_fetch_row($resul1)){ 
        echo "<tr>
 	   		<td>$row[0]</td>
 	   		<td>$row[1]</td>
 			<td> <img width='80' height='80' src='$row[2]'> </td>
 			<td>$row[3]</td>
-			
+			<td>Añadir </td>
 		
 
 			
