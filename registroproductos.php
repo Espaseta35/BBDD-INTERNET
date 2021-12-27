@@ -72,7 +72,7 @@
 						id="precio"
 						name="precio"
 						size="10"
-						maxlength="5"
+						maxlength="8"
 						required
 					/>
 				</div>
