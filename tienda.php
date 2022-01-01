@@ -45,13 +45,9 @@ while ($row = mysqli_fetch_row($resul1)){
        echo "<tr>
 	   		<td>$row[0]</td>
 	   		<td>$row[1]</td>
-			<td> <img width='80' height='80' src='$row[2]'> </td>
+			<td> <img width='120' height='120' src='$row[2]'> </td>
 			<td>$row[3]</td>
 			<td>Añadir </td>
-		
-
-			
-			
 			</tr>\n"; 
 }
 echo "</table> \n"; 

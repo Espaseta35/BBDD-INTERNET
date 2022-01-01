@@ -1,3 +1,6 @@
+<?php include "seguridad1.php";
+$nombreusuario= $_SESSION['nombre'];
+?>
 <!DOCTYPE html>
 <html lang="es">
 	<head>

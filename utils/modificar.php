@@ -1,5 +1,8 @@
 
 <?php
+include "seguridad1.php";
+$nombreusuario= $_SESSION['nombre'];
+
 if (!isset($_POST['admin'])) {
 	$_POST['admin'] = 'No';
 }

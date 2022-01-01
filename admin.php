@@ -37,7 +37,9 @@ $nombreusuario= $_SESSION['nombre'];
             <p class="caja coja2"><a href="consulta.php">Visualizar la base de datos</a><p>
             <p class="caja coja2"><a href="borrar.php">Eliminar registro</a><p>
             <p class="caja coja2"> <a href="fcambiar.php">Cambiar algún dato</a><p>
-			<p class="caja coja2"> <a href="registroproductos.php">Añadir un nuevo producto</a><p>
+			<p class="caja coja2"> <a href="registroproductos.php">Añadir un nuevo producto 
+			</a><p>
+			<p class="caja coja2"> <a href="borrarprod.php">Eliminar un producto</a><p>
 		</main>
 
 		<footer>

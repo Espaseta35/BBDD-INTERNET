@@ -1,4 +1,6 @@
-<?php
+<?php include "seguridad1.php";
+$nombreusuario= $_SESSION['nombre'];
+
 if (isset($_POST['producto']) && !empty($_POST['codigo']) && isset($_POST['imagen']) && !empty($_POST['precio'])) {
 	$link = mysqli_connect("localhost", "root", "", "espasarc");
 	mysqli_query($link, "INSERT INTO productos(producto,codigo,imagen,precio) VALUES ('{$_POST['producto']}','{$_POST['codigo']}','{$_POST['imagen']}','{$_POST['precio']}')");

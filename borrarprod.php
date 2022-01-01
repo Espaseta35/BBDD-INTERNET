@@ -1,3 +1,7 @@
+<?php include "seguridad1.php";
+$nombreusuario= $_SESSION['nombre'];
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -19,7 +23,7 @@
             </div>
             <nav height="100%">
                 <ul>
-                            <li><a href="index.php">Inicio</a></li>
+                <li><a href="index.php">Inicio</a></li>
 							<li><a href="HRC.php">Historia</a></li>
 							<li><a href="somos.php">Tipo de Coches</a></li>
 							<li><a href="tienda.php">Tienda</a></li>
@@ -34,21 +38,26 @@
  <?php
 
 $link = mysqli_connect("localhost", "root", "","espasarc"); 
-$resul1 = mysqli_query($link,"SELECT id,nombre,apellidos,correo,contraseña,admin FROM datos"); 
+$resul1 = mysqli_query($link,"SELECT producto,codigo,imagen,precio FROM productos"); 
 //Creamos  la tabla
 echo "<table> \n"; 
 //incluimos los nombres de los campos
-echo "<tr class='red'><th>id</th><th>Nombre</th><th>Apellido </th><th>Correo </th><th> Contraseña </th><th > Admin</th></tr> \n"; 
-//Incluimos los resultados de la búsqueda
+echo "<tr class='red'><th>Producto</th><th>Referencia</th><th>Imagen</th><th>Precio</th><th>  </th></tr> \n"; 
 while ($row = mysqli_fetch_row($resul1)){ 
-       echo "<tr><td>$row[0]</td><td>$row[1]</td><td>$row[2]</td><td>$row[3]</td><td>$row[4]</td><td>$row[5]</td></tr>\n"; 
-} 
+       echo "<tr>
+	   		<td>$row[0]</td>
+	   		<td>$row[1]</td>
+			<td> <img width='120' height='120' src='$row[2]'> </td>
+			<td>$row[3]</td>
+			<td>Añadir </td>
+			</tr>\n"; 
+}
 echo "</table> \n"; 
 ?> 
 
 <br>
-<form method="POST" action="eliminar.php">
-Elimina por id:<input maxlength="30" size="30" name="cadena"><br>
+<form method="POST" action="eliminarprod.php">
+Elimina por código:<input maxlength="30" size="30" name="cadena"><br>
 <input name="Enviar" value="Elimina datos" type="submit">
 </form>
 </main>
