@@ -1,5 +1,5 @@
 <?php include "seguridad.php";
-$nombreusuario= $_SESSION['nombre'];
+$nombreUsuario= $_SESSION['nombre'];
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -64,7 +64,6 @@ echo "</table> \n";
 
 		<select name='prod' type="number" id="prod">
 		<?php
-			$link = mysqli_connect("localhost", "root", "","espasarc"); 
 			$resul1 = mysqli_query($link,"SELECT producto,codigo,imagen,precio FROM productos"); 
 			while ($cod = mysqli_fetch_row($resul1)){ 
 
@@ -96,36 +95,45 @@ echo "</table> \n";
 
 
 		<?php 	
-		$link = mysqli_connect("localhost", "root", "","espasarc"); 
-		$compras = mysqli_query($link,"SELECT producto, cantidad FROM compra WHERE cliente='$nombreusuario'");
+		$compras = mysqli_query($link,"SELECT producto, cantidad FROM compra WHERE cliente='$nombreUsuario'");
+		$comprasArray = [];
+		while($row = mysqli_fetch_array($compras))
+		{
+			$comprasArray[] = $row;
+		}
 		
 		$carrito = [];
 
-		foreach ($compras as $index=>$compra) {
-			//var_dump($compra);
-			$wed=$compra["producto"];
-			var_dump($wed);die;
-			$producto = mysqli_query($link,"SELECT producto, precio FROM produtos WHERE codigo='$wed'");
-			var_dump($producto);die;
-			$carrito[$index]['nombrep'] = $producto['producto'];
-			$carrito[$index]['preciop'] = $producto['precio'];
-			$carrito[$index]['cantidad'] = $compra['cantidad'];
+		foreach ($comprasArray as $index=>$compra) {
+			$productoId = $compra["producto"];
+			$producto = mysqli_query($link, "SELECT producto, precio FROM productos WHERE codigo='$productoId'");
+			$productoArray = mysqli_fetch_array($producto);
+
+			$newProd = [
+				'nombrep' => $productoArray['producto'],
+				'preciop' => $productoArray['precio'],
+				'cantidad' => $compra['cantidad'],
+			];
+
+			$carrito[] = $newProd;
 		};
 
-		var_dump($carrito);die;
-
-//Creamos  la tabla
+// Creamos  la tabla
 echo "<table> \n"; 
 echo "<h2>Carrito</h2>";
-//incluimos los nombres de los campos
+// Incluimos los nombres de los campos
 echo "<tr class='red'><th>Producto</th><th>Cantidad</th><th>Precio</th><th>  </th></tr> \n"; 
-while ($row = mysqli_fetch_row($compras)){ 
+foreach ($carrito as $carritoProd) {
+	$nombreProducto = $carritoProd['nombrep'];
+	$precioProducto = $carritoProd['preciop'];
+	$unidadesProducto = $carritoProd['cantidad'];
+
        echo "<tr>
-	   		<td>$row[0]</td>
-	   		<td>$row[1]</td>
-			
-			<td></td>
-			</tr>\n"; 
+	   		<td>$nombreProducto</td>
+	   		<td>$precioProducto</td>
+			<td>$unidadesProducto</td>
+			</tr>
+			\n"; 
 }
 echo "</table> \n"; 
 ?>
