@@ -122,16 +122,18 @@ echo "</table> \n";
 echo "<table> \n"; 
 echo "<h2>Carrito</h2>";
 // Incluimos los nombres de los campos
-echo "<tr class='red'><th>Producto</th><th>Cantidad</th><th>Precio</th><th>  </th></tr> \n"; 
+echo "<tr class='red'><th>Producto</th><th>Cantidad</th><th>Precio</th><th>Total</th></tr> \n"; 
 foreach ($carrito as $carritoProd) {
 	$nombreProducto = $carritoProd['nombrep'];
 	$precioProducto = $carritoProd['preciop'];
 	$unidadesProducto = $carritoProd['cantidad'];
+	$totalProducto = floatval($precioProducto) * floatval($unidadesProducto);
 
        echo "<tr>
 	   		<td>$nombreProducto</td>
-	   		<td>$precioProducto</td>
 			<td>$unidadesProducto</td>
+			<td>$precioProducto €</td>
+			<td>$totalProducto €</td>
 			</tr>
 			\n"; 
 }
