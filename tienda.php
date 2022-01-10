@@ -34,7 +34,7 @@ $nombreusuario= $_SESSION['nombre'];
 		</header>
 <main>
 		<h2>PRODUCTOS</h2>
-		<?php $link = mysqli_connect("localhost", "root", "","espasarc"); 
+<?php $link = mysqli_connect("localhost", "root", "","espasarc"); 
 $resul1 = mysqli_query($link,"SELECT producto,codigo,imagen,precio FROM productos"); 
 //Creamos  la tabla
 echo "<table> \n"; 
@@ -47,14 +47,88 @@ while ($row = mysqli_fetch_row($resul1)){
 	   		<td>$row[1]</td>
 			<td> <img width='120' height='120' src='$row[2]'> </td>
 			<td>$row[3]</td>
-			<td>Añadir </td>
+			<td></td>
 			</tr>\n"; 
 }
 echo "</table> \n"; 
 ?>
 
 
+
+
+
+<main id="cuerpo">
+	<form name="form" method="post" action="./utils/insertarcant.php">	
+	<div class="fild">
+			<h2>Añadir producto</h2>
+
+		<select name='prod' type="number" id="prod">
+		<?php
+			$link = mysqli_connect("localhost", "root", "","espasarc"); 
+			$resul1 = mysqli_query($link,"SELECT producto,codigo,imagen,precio FROM productos"); 
+			while ($cod = mysqli_fetch_row($resul1)){ 
+
+			echo"<option value='$cod[1]'>$cod[1]</option>\n";
+
+			}
+		?>
+		</select>
+
+				</div>
+
+				<div class="fild">
+					<label for="number" class="number">Cantidad:</label>
+					<input
+						name="cantidad"
+						type="number"
+						id="cantidad"
+						maxlength="30"
+						min="0" 
+						max="10"
+						required
+					/>
+				</div>
+				<button type="reset" id="reset">Vaciar </button>
+				<button type="submit" id="submit">Añadir produto</button>
+
+				</form>
 		</main>
+
+
+		<?php 	
+		$link = mysqli_connect("localhost", "root", "","espasarc"); 
+		$compras = mysqli_query($link,"SELECT producto, cantidad FROM compra WHERE cliente='$nombreusuario'");
+		
+		$carrito = [];
+
+		foreach ($compras as $index=>$compra) {
+			//var_dump($compra);
+			$wed=$compra["producto"];
+			var_dump($wed);die;
+			$producto = mysqli_query($link,"SELECT producto, precio FROM produtos WHERE codigo='$wed'");
+			var_dump($producto);die;
+			$carrito[$index]['nombrep'] = $producto['producto'];
+			$carrito[$index]['preciop'] = $producto['precio'];
+			$carrito[$index]['cantidad'] = $compra['cantidad'];
+		};
+
+		var_dump($carrito);die;
+
+//Creamos  la tabla
+echo "<table> \n"; 
+echo "<h2>Carrito</h2>";
+//incluimos los nombres de los campos
+echo "<tr class='red'><th>Producto</th><th>Cantidad</th><th>Precio</th><th>  </th></tr> \n"; 
+while ($row = mysqli_fetch_row($compras)){ 
+       echo "<tr>
+	   		<td>$row[0]</td>
+	   		<td>$row[1]</td>
+			
+			<td></td>
+			</tr>\n"; 
+}
+echo "</table> \n"; 
+?>
 		<footer>
 			<h3>Empresas colaboradoras</h3>
 			<a href="https://espasarcshop.com/"
