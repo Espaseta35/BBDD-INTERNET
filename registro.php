@@ -78,7 +78,7 @@
 				</div>
 
 				<div class="fild checkbox">
-					<label for="adming" class="admin">¿Eres Admin?</label>
+					<label for="admin" class="admin">¿Eres Admin?</label>
 					<input
 						name="admin"
 						type="checkbox"

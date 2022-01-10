@@ -1,12 +1,9 @@
 <?php
-include "seguridad1.php";
-$nombreusuario= $_SESSION['nombre'];
 
 // Primero comprobamos que ningún campo esté vacío y que todos los campos existan.
 if (!isset($_POST['admin'])) {
 	$_POST['admin'] = 'No';
 }
-
 if (isset($_POST['nombre']) && !empty($_POST['apellidos']) && isset($_POST['correo']) && !empty($_POST['contraseña']) && isset($_POST['admin'])) {
 	// Si entramos es que todo se ha realizado correctamente y conectamos con la base de datos club de mysql
 	$link = mysqli_connect("localhost", "root", "", "espasarc");
@@ -18,9 +15,12 @@ if (isset($_POST['nombre']) && !empty($_POST['apellidos']) && isset($_POST['corr
 	$my_error = mysqli_error($link);
 	if (!empty($my_error)) {
 		echo "Ha habido un error al insertar los valores. $my_error";
+		header("Location: ../login.php");
 	} else {
 		echo "Los datos han sido introducidos satisfactoriamente";
+		header("Location: ../login.php");
 	}
 } else {
 	echo "Error, no ha introducido todos los datos";
+	header("Location: ../login.php");
 }
