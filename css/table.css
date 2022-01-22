@@ -28,3 +28,10 @@ td {
 tr.red {
 	background-color: #f44336;
 }
+
+.totalTitle {
+	font-weight: 900;
+}
+.totalSum {
+	font-weight: 900;
+}

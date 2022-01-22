@@ -40,6 +40,7 @@ $nombreusuario= $_SESSION['nombre'];
 			<p class="caja coja2"> <a href="registroproductos.php">Añadir un nuevo producto 
 			</a><p>
 			<p class="caja coja2"> <a href="borrarprod.php">Eliminar un producto</a><p>
+			<p class="caja coja2"> <a href="fcambiarcarrit.php">Revisar productos añadidos al carrito</a><p>
 		</main>
 
 		<footer>
